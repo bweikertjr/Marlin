@@ -21,7 +21,7 @@
  */
 #pragma once
 
-#define CONFIG_EXAMPLES_DIR "Creality/Ender-5 Pro/CrealityV422"
+//#define CONFIG_EXAMPLES_DIR "Creality/Ender-5 Pro/CrealityV422"   //Disable
 
 /**
  * Configuration_adv.h
@@ -2221,7 +2221,7 @@
 #endif // HAS_MULTI_EXTRUDER
 
 /**
- * Advanced Pause
+ * Advanced Pause   //BluJay
  * Experimental feature for filament change support and for parking the nozzle when paused.
  * Adds the GCode M600 for initiating filament change.
  * If PARK_HEAD_ON_PAUSE enabled, adds the GCode M125 to pause printing and park the nozzle.
