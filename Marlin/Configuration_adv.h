@@ -527,21 +527,21 @@
  */
 #define E0_AUTO_FAN_PIN -1
 #define E1_AUTO_FAN_PIN -1
-#define E2_AUTO_FAN_PIN -1
-#define E3_AUTO_FAN_PIN -1
-#define E4_AUTO_FAN_PIN -1
-#define E5_AUTO_FAN_PIN -1
-#define E6_AUTO_FAN_PIN -1
-#define E7_AUTO_FAN_PIN -1
-#define CHAMBER_AUTO_FAN_PIN -1
-#define COOLER_FAN_PIN -1
+//#define E2_AUTO_FAN_PIN -1   //Disabled
+//#define E3_AUTO_FAN_PIN -1   //Disabled
+//#define E4_AUTO_FAN_PIN -1   //Disabled
+//#define E5_AUTO_FAN_PIN -1   //Disabled
+//#define E6_AUTO_FAN_PIN -1
+//#define E7_AUTO_FAN_PIN -1
+//#define CHAMBER_AUTO_FAN_PIN -1
+//#define COOLER_FAN_PIN -1
 
 #define EXTRUDER_AUTO_FAN_TEMPERATURE 50
 #define EXTRUDER_AUTO_FAN_SPEED 255   // 255 == full speed
-#define CHAMBER_AUTO_FAN_TEMPERATURE 30
-#define CHAMBER_AUTO_FAN_SPEED 255
-#define COOLER_AUTO_FAN_TEMPERATURE 18
-#define COOLER_AUTO_FAN_SPEED 255
+//#define CHAMBER_AUTO_FAN_TEMPERATURE 30   //Disabled
+//#define CHAMBER_AUTO_FAN_SPEED 255   //Disabled
+//#define COOLER_AUTO_FAN_TEMPERATURE 18   //Disabled
+//#define COOLER_AUTO_FAN_SPEED 255   //Disabled
 
 /**
  * Part-Cooling Fan Multiplexer
