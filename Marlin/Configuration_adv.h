@@ -527,21 +527,21 @@
  */
 #define E0_AUTO_FAN_PIN -1
 #define E1_AUTO_FAN_PIN -1
-//#define E2_AUTO_FAN_PIN -1   //Disabled
-//#define E3_AUTO_FAN_PIN -1   //Disabled
-//#define E4_AUTO_FAN_PIN -1   //Disabled
-//#define E5_AUTO_FAN_PIN -1   //Disabled
-//#define E6_AUTO_FAN_PIN -1
-//#define E7_AUTO_FAN_PIN -1
-//#define CHAMBER_AUTO_FAN_PIN -1
-//#define COOLER_FAN_PIN -1
+//#define E2_AUTO_FAN_PIN -1          //Disabled
+//#define E3_AUTO_FAN_PIN -1          //Disabled
+//#define E4_AUTO_FAN_PIN -1          //Disabled
+//#define E5_AUTO_FAN_PIN -1          //Disabled
+//#define E6_AUTO_FAN_PIN -1          //Disabled
+//#define E7_AUTO_FAN_PIN -1          //Disabled
+//#define CHAMBER_AUTO_FAN_PIN -1     //Disabled
+//#define COOLER_FAN_PIN -1           //Disabled
 
 #define EXTRUDER_AUTO_FAN_TEMPERATURE 50
 #define EXTRUDER_AUTO_FAN_SPEED 255   // 255 == full speed
 //#define CHAMBER_AUTO_FAN_TEMPERATURE 30   //Disabled
-//#define CHAMBER_AUTO_FAN_SPEED 255   //Disabled
-//#define COOLER_AUTO_FAN_TEMPERATURE 18   //Disabled
-//#define COOLER_AUTO_FAN_SPEED 255   //Disabled
+//#define CHAMBER_AUTO_FAN_SPEED 255        //Disabled
+//#define COOLER_AUTO_FAN_TEMPERATURE 18    //Disabled
+//#define COOLER_AUTO_FAN_SPEED 255         //Disabled
 
 /**
  * Part-Cooling Fan Multiplexer
@@ -991,7 +991,7 @@
  * Note: HOTEND_OFFSET and CALIBRATION_OBJECT_CENTER must be set to within
  *       ±5mm of true values for G425 to succeed.
  */
-//#define CALIBRATION_GCODE
+//#define CALIBRATION_GCODE   //BluJay
 #if ENABLED(CALIBRATION_GCODE)
 
   //#define CALIBRATION_SCRIPT_PRE  "M117 Starting Auto-Calibration\nT0\nG28\nG12\nM117 Calibrating..."
@@ -1116,7 +1116,7 @@
 
 #if EITHER(IS_ULTIPANEL, EXTENSIBLE_UI)
   #define MANUAL_FEEDRATE { 50*60, 50*60, 4*60, 2*60 } // (mm/min) Feedrates for manual moves along X, Y, Z, E from panel
-  #define FINE_MANUAL_MOVE 0.025    // (mm) Smallest manual move (< 0.1mm) applying to Z on most machines
+  #define FINE_MANUAL_MOVE 0.020    // (mm) Smallest manual move (< 0.1mm) applying to Z on most machines   //BluJay
   #if IS_ULTIPANEL
     #define MANUAL_E_MOVES_RELATIVE // Display extruder move distance rather than "position"
     #define ULTIPANEL_FEEDMULTIPLY  // Encoder sets the feedrate multiplier on the Status Screen
@@ -1210,7 +1210,7 @@
   #endif
 
   // Scroll a longer status message into view
-  #define STATUS_MESSAGE_SCROLLING
+  // #define STATUS_MESSAGE_SCROLLING   //BluJay
 
   // On the Info Screen, display XY with one decimal place when possible
   //#define LCD_DECIMAL_SMALL_XY
@@ -1365,7 +1365,7 @@
   //#define LONG_FILENAME_HOST_SUPPORT
 
   // Enable this option to scroll long filenames in the SD card menu
-  #define SCROLL_LONG_FILENAMES
+  //#define SCROLL_LONG_FILENAMES  //BluJay
 
   // Leave the heaters on after Stop Print (not recommended!)
   //#define SD_ABORT_NO_COOLDOWN
@@ -1736,7 +1736,7 @@
  *
  * Warning: Does not respect endstops!
  */
-#define BABYSTEPPING
+#define BABYSTEPPING   //BluJay
 #if ENABLED(BABYSTEPPING)
   //#define INTEGRATED_BABYSTEPPING         // EXPERIMENTAL integration of babystepping into the Stepper ISR
   //#define BABYSTEP_WITHOUT_HOMING
